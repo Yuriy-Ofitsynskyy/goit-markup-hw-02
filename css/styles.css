@@ -1,0 +1,245 @@
+/* колір основного тексту: #212121 
+колір вторинного тексту, контактів у гедері: #757575
+колір адреси у футері: #FFFFFF
+е-меіл, тел. у футері: rgba(255, 255, 255, 0.6)
+колір говеру, замовити послугу, Web у лого: #2196F3
+Studio: #000000
+фон "Чим ми займаємося": #F5F5F5
+фон "Наша команда": #F5F4FA
+фон футера: #2F303A
+*/
+:root {
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --hero-footer-street-color: #ffffff;
+  --what-we-do-bgc: #f5f5f5;
+  --our-team-bgc: #f5f4fa;
+  --footer-bgc: #2f303a;
+  --logo-color: #000000;
+}
+
+body {
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+  background-color: var(--hero-footer-street-color);
+}
+
+.logo {
+  color: var(--logo-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts .e-mail,
+.contacts .tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .e-mail,
+.contacts .tel,
+.advantages-text,
+.profession {
+  color: var(--secondary-text-color);
+}
+
+.contacts .e-mail:hover,
+.contacts .e-mail:focus,
+.contacts .tel:hover,
+.contacts .tel:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* STUDIO */
+/* Hero */
+.hero {
+  background-color: var(--footer-bgc);
+}
+.hero-title {
+  color: var(--hero-footer-street-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--hero-footer-street-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hover-color);
+}
+
+/* Advantages */
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* general sections styles */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* section: what we do */
+.section {
+  background-color: var(--what-we-do-bgc);
+}
+
+/* section: our team */
+.section.team {
+  background-color: var(--our-team-bgc);
+}
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  color: var(--hero-footer-street-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-street,
+.footer-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-street {
+  color: var(--hero-footer-street-color);
+}
+
+.footer-contacts {
+  color: var(--footer-contacts-color);
+}
+
+/* PORTFOLIO */
+/* portfolio filter */
+.portfolio-filter,
+.portfolio-works {
+  background-color: var(--what-we-do-bgc);
+}
+
+.portfolio-btn {
+  color: var(--primary-text-color);
+  background-color: var(--our-team-bgc);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--hero-footer-street-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-item {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-category {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
